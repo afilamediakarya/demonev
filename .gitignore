@@ -1,0 +1,8 @@
+.env
+vendor
+node_modules
+storage
+todo.txt
+.DS_Store
+composer.lock
+composer.json

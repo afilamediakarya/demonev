@@ -1,0 +1,41 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class AddFieldToBackupTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::table('backup_report_target', function (Blueprint $table) {
+            $table->unsignedBigInteger('id_dpa_backup')->nullable();
+        });
+        Schema::table('backup_report_realisasi', function (Blueprint $table) {
+            $table->unsignedBigInteger('id_dpa_backup')->nullable();
+        });
+        Schema::table('backup_report_realisasi_dak', function (Blueprint $table) {
+            $table->unsignedBigInteger('id_dpa_backup')->nullable();
+        });
+        Schema::table('backup_report_paket_dak', function (Blueprint $table) {
+            $table->unsignedBigInteger('id_dpa_backup')->nullable();
+        });
+        Schema::table('backup_report_detail_realisasi', function (Blueprint $table) {
+            $table->unsignedBigInteger('id_dpa_backup')->nullable();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+    }
+}

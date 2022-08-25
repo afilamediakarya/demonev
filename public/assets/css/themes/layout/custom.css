@@ -1,0 +1,116 @@
+.fs-100{
+    font-size: 1vw;
+}
+.jadwal {
+    display: flex;
+    margin-top: 12px;
+}
+
+.bg-info{
+    background-color:#8950fc;
+}
+
+.bg-warning{
+    background-color: #ffa800;
+}
+.bg-primary{
+    background-color: #3699ff;
+}
+.bg-danger{
+    background-color: #f64e60;
+}
+.bg-success{
+    background-color: #1bc5bd;
+}
+.jadwal .jadwal-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 10px;
+    padding-top: 24px;
+    width: 20%;
+    position: relative;
+    margin: 5px;
+}
+.jadwal .jadwal-item .btn {
+    font-size: 11px;
+}
+.jadwal .jadwal-item .jadwal-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    color: #FFF !important;
+    border-radius: 100%;
+    left: 36%;
+    top: -25px;
+}
+.jadwal .jadwal-item .jadwal-icon span i {
+    color: #FFF;
+    margin-top: 9px;
+    font-size: 20px;
+}
+.jadwal .jadwal-item h5{
+    font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 16px;
+letter-spacing: 0.005em;
+
+color: #6B6773;
+}
+
+.jadwal .jadwal-item h4{
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 100%;
+letter-spacing: 0.005em;
+
+/* Text/DarkShade */
+
+color: #45414D;
+}
+
+
+@media screen and (max-width: 600px)
+{
+    .jadwal {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .jadwal .jadwal-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background: #FFFFFF;
+        border: 1px solid #E5E5E5;
+        box-sizing: border-box;
+        border-radius: 6px;
+        padding: 10px;
+        padding-top: 24px;
+        width: 100%;
+        position: relative;
+        margin: 5px;
+        margin-top: 36px;
+    }
+
+    .jadwal .jadwal-item .jadwal-icon {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        color: #FFF !important;
+        border-radius: 100%;
+        left: 42%;
+        top: -25px;
+    }
+}
